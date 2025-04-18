@@ -70,6 +70,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'userauth.wsgi.application'
 
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # For testing locally
+
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'imblackdragondev@gmail.com'  # Replace with your Gmail email address
+EMAIL_HOST_PASSWORD = 'lopv gixb ceto idbq'  # Replace with your Gmail password or App password
+DEFAULT_FROM_EMAIL = 'imblackdragondev@gmail.com'  # Your "from" email
+
+
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
